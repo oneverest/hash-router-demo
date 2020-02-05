@@ -8,6 +8,9 @@ import UserDetail from './UserDetail'
 export class User extends Component {
 
   render() {
+    const {match} = this.props;
+    console.log('match', match);
+
     return ( 
       <div>
         <Grid columns={12} >

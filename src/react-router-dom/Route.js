@@ -18,6 +18,9 @@ export class Route extends Component {
           const props = {
             ...state,
             match: {
+              isExact: !!exact,
+              path: path,
+              url,
               params: keys.reduce((obj, current, idx) => {
                 obj[current] = values[idx];
                 return obj;
